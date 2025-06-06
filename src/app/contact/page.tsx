@@ -7,7 +7,7 @@ export default function ContactPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <section className="w-full py-12 md:py-24 bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white">
-        <div className="container px-4 md:px-6">
+        <div className=" px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">
               Contact Us
@@ -20,7 +20,7 @@ export default function ContactPage() {
       </section>
 
       <section className="w-full py-12 md:py-24">
-        <div className="container px-4 md:px-6">
+        <div className=" px-4 md:px-6">
           <div className="grid gap-10 lg:grid-cols-2">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -201,7 +201,7 @@ export default function ContactPage() {
       </section>
 
       <section className="w-full py-12 md:py-24 bg-gray-50">
-        <div className="container px-4 md:px-6">
+        <div className=" px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter">
               Frequently Asked Questions

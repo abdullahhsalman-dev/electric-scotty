@@ -33,7 +33,7 @@ export default function Header() {
         isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent"
       }`}
     >
-      <div className="container flex h-16 items-center justify-between px-4 md:px-6">
+      <div className=" flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
           <motion.div
             initial={{ rotate: 0 }}

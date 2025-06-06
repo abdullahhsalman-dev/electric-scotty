@@ -23,7 +23,7 @@ export default function ProductsPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <section className="w-full py-12 md:py-24 bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white">
-        <div className="container px-4 md:px-6">
+        <div className="px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">
               Our Electric Scooters

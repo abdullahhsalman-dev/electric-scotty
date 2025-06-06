@@ -1,26 +1,29 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import { motion } from "framer-motion"
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <section className="w-full py-12 md:py-24 bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white">
-        <div className="container px-4 md:px-6">
+        <div className=" px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">About Electric Scotty</h1>
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">
+              About Electric Scotty
+            </h1>
             <p className="max-w-[700px] text-white/90 md:text-xl/relaxed">
-              Pioneering the future of urban mobility with innovative electric scooters.
+              Pioneering the future of urban mobility with innovative electric
+              scooters.
             </p>
           </div>
         </div>
       </section>
 
       <section className="w-full py-12 md:py-24">
-        <div className="container px-4 md:px-6">
+        <div className=" px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -30,17 +33,20 @@ export default function AboutPage() {
             >
               <h2 className="text-3xl font-bold tracking-tighter">Our Story</h2>
               <p className="text-gray-500 md:text-xl/relaxed">
-                Founded in 2018, Electric Scotty began with a simple mission: to transform urban transportation with
-                stylish, efficient, and eco-friendly electric scooters.
+                Founded in 2018, Electric Scotty began with a simple mission: to
+                transform urban transportation with stylish, efficient, and
+                eco-friendly electric scooters.
               </p>
               <p className="text-gray-500 md:text-xl/relaxed">
-                Our founder, Alex Scotty, was frustrated with the daily commute in congested city streets and the
-                environmental impact of traditional vehicles. This led to the creation of our first prototype in a small
-                garage in San Francisco.
+                Our founder, Alex Scotty, was frustrated with the daily commute
+                in congested city streets and the environmental impact of
+                traditional vehicles. This led to the creation of our first
+                prototype in a small garage in San Francisco.
               </p>
               <p className="text-gray-500 md:text-xl/relaxed">
-                Today, Electric Scotty has grown into a global brand with a presence in over 30 countries, but our
-                commitment to sustainability and innovation remains unchanged.
+                Today, Electric Scotty has grown into a global brand with a
+                presence in over 30 countries, but our commitment to
+                sustainability and innovation remains unchanged.
               </p>
             </motion.div>
             <motion.div
@@ -61,7 +67,7 @@ export default function AboutPage() {
       </section>
 
       <section className="w-full py-12 md:py-24 bg-gray-50">
-        <div className="container px-4 md:px-6">
+        <div className=" px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
             <h2 className="text-3xl font-bold tracking-tighter">Our Values</h2>
             <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed">
@@ -97,7 +103,8 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-bold mb-2">Sustainability</h3>
               <p className="text-gray-500">
-                We&apos;re committed to reducing carbon emissions and creating products that are environmentally responsible.
+                We&apos;re committed to reducing carbon emissions and creating
+                products that are environmentally responsible.
               </p>
             </motion.div>
             <motion.div
@@ -125,7 +132,8 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-bold mb-2">Innovation</h3>
               <p className="text-gray-500">
-                We continuously push the boundaries of what&apos;s possible in electric mobility technology.
+                We continuously push the boundaries of what&apos;s possible in
+                electric mobility technology.
               </p>
             </motion.div>
             <motion.div
@@ -156,7 +164,8 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-bold mb-2">Community</h3>
               <p className="text-gray-500">
-                We build products that bring people together and create a community of eco-conscious riders.
+                We build products that bring people together and create a
+                community of eco-conscious riders.
               </p>
             </motion.div>
           </div>
@@ -164,9 +173,11 @@ export default function AboutPage() {
       </section>
 
       <section className="w-full py-12 md:py-24">
-        <div className="container px-4 md:px-6">
+        <div className=" px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
-            <h2 className="text-3xl font-bold tracking-tighter">Meet Our Team</h2>
+            <h2 className="text-3xl font-bold tracking-tighter">
+              Meet Our Team
+            </h2>
             <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed">
               The passionate individuals behind Electric Scotty.
             </p>
@@ -180,7 +191,12 @@ export default function AboutPage() {
               className="flex flex-col items-center text-center"
             >
               <div className="relative h-40 w-40 rounded-full overflow-hidden mb-4">
-                <Image src="/placeholder.svg?height=300&width=300" alt="Alex Scotty" fill className="object-cover" />
+                <Image
+                  src="/placeholder.svg?height=300&width=300"
+                  alt="Alex Scotty"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <h3 className="text-xl font-bold">Alex Scotty</h3>
               <p className="text-purple-600">Founder & CEO</p>
@@ -193,7 +209,12 @@ export default function AboutPage() {
               className="flex flex-col items-center text-center"
             >
               <div className="relative h-40 w-40 rounded-full overflow-hidden mb-4">
-                <Image src="/placeholder.svg?height=300&width=300" alt="Sarah Chen" fill className="object-cover" />
+                <Image
+                  src="/placeholder.svg?height=300&width=300"
+                  alt="Sarah Chen"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <h3 className="text-xl font-bold">Sarah Chen</h3>
               <p className="text-purple-600">CTO</p>
@@ -206,7 +227,12 @@ export default function AboutPage() {
               className="flex flex-col items-center text-center"
             >
               <div className="relative h-40 w-40 rounded-full overflow-hidden mb-4">
-                <Image src="/placeholder.svg?height=300&width=300" alt="Marcus Johnson" fill className="object-cover" />
+                <Image
+                  src="/placeholder.svg?height=300&width=300"
+                  alt="Marcus Johnson"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <h3 className="text-xl font-bold">Marcus Johnson</h3>
               <p className="text-purple-600">Design Director</p>
@@ -219,7 +245,12 @@ export default function AboutPage() {
               className="flex flex-col items-center text-center"
             >
               <div className="relative h-40 w-40 rounded-full overflow-hidden mb-4">
-                <Image src="/placeholder.svg?height=300&width=300" alt="Leila Patel" fill className="object-cover" />
+                <Image
+                  src="/placeholder.svg?height=300&width=300"
+                  alt="Leila Patel"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <h3 className="text-xl font-bold">Leila Patel</h3>
               <p className="text-purple-600">Marketing Director</p>
@@ -229,17 +260,23 @@ export default function AboutPage() {
       </section>
 
       <section className="w-full py-12 md:py-24 bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white">
-        <div className="container px-4 md:px-6">
+        <div className=" px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 items-center">
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter">Join Our Mission</h2>
+              <h2 className="text-3xl font-bold tracking-tighter">
+                Join Our Mission
+              </h2>
               <p className="max-w-[600px] text-white/90 md:text-xl">
-                We&apos;re always looking for talented individuals who are passionate about sustainable transportation and
-                innovation.
+                We&apos;re always looking for talented individuals who are
+                passionate about sustainable transportation and innovation.
               </p>
             </div>
             <div className="flex justify-center lg:justify-end">
-              <Button asChild size="lg" className="bg-white text-purple-600 hover:bg-white/90">
+              <Button
+                asChild
+                size="lg"
+                className="bg-white text-purple-600 hover:bg-white/90"
+              >
                 <Link href="/contact">View Open Positions</Link>
               </Button>
             </div>
@@ -247,5 +284,5 @@ export default function AboutPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }
