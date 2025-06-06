@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { Zap } from "lucide-react"
+import Link from "next/link";
+import { Zap } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -9,13 +9,19 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Zap className="h-6 w-6 text-purple-400" />
-              <span className="text-xl font-bold text-white">Electric Scotty</span>
+              <span className="text-xl font-bold text-white">
+                Electric Scotty
+              </span>
             </div>
             <p className="text-sm text-gray-400">
-              Revolutionizing urban mobility with stylish, efficient, and eco-friendly electric scooters.
+              Revolutionizing urban mobility with stylish, efficient, and
+              eco-friendly electric scooters.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -31,7 +37,10 @@ export default function Footer() {
                 </svg>
                 <span className="sr-only">Facebook</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -49,7 +58,10 @@ export default function Footer() {
                 </svg>
                 <span className="sr-only">Instagram</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -65,7 +77,10 @@ export default function Footer() {
                 </svg>
                 <span className="sr-only">Twitter</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -89,12 +104,18 @@ export default function Footer() {
             <h3 className="text-lg font-medium text-white mb-4">Products</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/products" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/products"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   All Models
                 </Link>
               </li>
               <li>
-                <Link href="/products?category=commuter" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/products?category=commuter"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Commuter Scooters
                 </Link>
               </li>
@@ -115,7 +136,10 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/products?category=parts" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/products?category=parts"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Replacement Parts
                 </Link>
               </li>
@@ -125,27 +149,42 @@ export default function Footer() {
             <h3 className="text-lg font-medium text-white mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/about"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/about#team" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/about#team"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Our Team
                 </Link>
               </li>
               <li>
-                <Link href="/about#careers" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/about#careers"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Careers
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/blog"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/press" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/press"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Press
                 </Link>
               </li>
@@ -155,27 +194,42 @@ export default function Footer() {
             <h3 className="text-lg font-medium text-white mb-4">Support</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/contact"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/faq"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   FAQs
                 </Link>
               </li>
               <li>
-                <Link href="/warranty" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/warranty"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Warranty
                 </Link>
               </li>
               <li>
-                <Link href="/shipping" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/shipping"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Shipping & Returns
                 </Link>
               </li>
               <li>
-                <Link href="/service-centers" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/service-centers"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Service Centers
                 </Link>
               </li>
@@ -183,20 +237,31 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-gray-400">© {new Date().getFullYear()} Electric Scotty. All rights reserved.</p>
+          <p className="text-sm text-gray-400">
+            © {new Date().getFullYear()} Electric Scotty. All rights reserved.
+          </p>
           <div className="flex gap-4 mt-4 md:mt-0">
-            <Link href="/privacy" className="text-sm text-gray-400 hover:text-white transition-colors">
+            <Link
+              href="/privacy"
+              className="text-sm text-gray-400 hover:text-white transition-colors"
+            >
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-sm text-gray-400 hover:text-white transition-colors">
+            <Link
+              href="/terms"
+              className="text-sm text-gray-400 hover:text-white transition-colors"
+            >
               Terms of Service
             </Link>
-            <Link href="/sitemap" className="text-sm text-gray-400 hover:text-white transition-colors">
+            <Link
+              href="/sitemap"
+              className="text-sm text-gray-400 hover:text-white transition-colors"
+            >
               Sitemap
             </Link>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }

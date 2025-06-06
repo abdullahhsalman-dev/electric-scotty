@@ -1,6 +1,6 @@
-"use client"
-import Image from "next/image"
-import { motion } from "framer-motion"
+"use client";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function HeroAnimation() {
   return (
@@ -51,7 +51,11 @@ export default function HeroAnimation() {
             scale: [1, 1.2, 1],
             rotate: [0, -5, 0, 5, 0],
           }}
-          transition={{ duration: 2, delay: 0.5, repeat: Number.POSITIVE_INFINITY }}
+          transition={{
+            duration: 2,
+            delay: 0.5,
+            repeat: Number.POSITIVE_INFINITY,
+          }}
           className="text-center"
         >
           <div className="font-bold text-fuchsia-700">25</div>
@@ -70,7 +74,11 @@ export default function HeroAnimation() {
             scale: [1, 1.2, 1],
             rotate: [0, 5, 0, -5, 0],
           }}
-          transition={{ duration: 2, delay: 1, repeat: Number.POSITIVE_INFINITY }}
+          transition={{
+            duration: 2,
+            delay: 1,
+            repeat: Number.POSITIVE_INFINITY,
+          }}
           className="text-center"
         >
           <div className="font-bold text-violet-700">2hr</div>
@@ -81,7 +89,7 @@ export default function HeroAnimation() {
       {/* Sparkle effects */}
       <SparkleEffect />
     </div>
-  )
+  );
 }
 
 function SparkleEffect() {
@@ -91,7 +99,7 @@ function SparkleEffect() {
     x: Math.random() * 100,
     y: Math.random() * 100,
     delay: Math.random() * 2,
-  }))
+  }));
 
   return (
     <>
@@ -115,10 +123,12 @@ function SparkleEffect() {
             width: sparkle.size,
             left: `${sparkle.x}%`,
             top: `${sparkle.y}%`,
-            boxShadow: `0 0 ${sparkle.size * 2}px ${sparkle.size / 2}px rgba(255, 255, 255, 0.8)`,
+            boxShadow: `0 0 ${sparkle.size * 2}px ${
+              sparkle.size / 2
+            }px rgba(255, 255, 255, 0.8)`,
           }}
         />
       ))}
     </>
-  )
+  );
 }

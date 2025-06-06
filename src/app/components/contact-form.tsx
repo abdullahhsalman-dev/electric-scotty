@@ -1,26 +1,32 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { motion } from "framer-motion"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { motion } from "framer-motion";
 
 export default function ContactForm() {
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+    e.preventDefault();
+    setIsSubmitting(true);
     // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000))
-    setIsSubmitting(false)
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+    setIsSubmitting(false);
     // Show success message or handle form submission
-  }
+  };
 
   return (
     <motion.form
@@ -43,7 +49,12 @@ export default function ContactForm() {
 
       <div className="space-y-2">
         <Label htmlFor="email">Email</Label>
-        <Input id="email" type="email" placeholder="Enter your email" required />
+        <Input
+          id="email"
+          type="email"
+          placeholder="Enter your email"
+          required
+        />
       </div>
 
       <div className="space-y-2">
@@ -69,12 +80,17 @@ export default function ContactForm() {
 
       <div className="space-y-2">
         <Label htmlFor="message">Message</Label>
-        <Textarea id="message" placeholder="Tell us how we can help you..." className="min-h-[120px]" required />
+        <Textarea
+          id="message"
+          placeholder="Tell us how we can help you..."
+          className="min-h-[120px]"
+          required
+        />
       </div>
 
       <Button type="submit" className="w-full" disabled={isSubmitting}>
         {isSubmitting ? "Sending..." : "Send Message"}
       </Button>
     </motion.form>
-  )
+  );
 }

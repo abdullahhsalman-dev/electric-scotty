@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, ChevronRight, Zap } from "lucide-react";
-import { Button } from "./components/ui/button";
-import HeroAnimation from "/components/hero-animation";
+import { Button } from "@/components/ui/button";
+import HeroAnimation from "./components/hero-animation";
 import ProductCard from "./components/product-card";
 import FeatureSection from "./components/feature-section";
 
@@ -141,8 +141,9 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600">
-                "My Electric Scotty has completely transformed my daily commute.
-                It's fast, reliable, and so much fun to ride!"
+                &quot;My Electric Scotty has completely transformed my daily
+                commute. It&apos;s fast, reliable, and so much fun to
+                ride!&quot;
               </p>
               <div className="flex text-yellow-400 mt-3">{"★".repeat(5)}</div>
             </div>
@@ -157,8 +158,8 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600">
-                "Love the design and performance! Perfect for city riding and
-                the battery life is amazing."
+                &quot;Love the design and performance! Perfect for city riding
+                and the battery life is amazing.&quot;
               </p>
               <div className="flex text-yellow-400 mt-3">{"★".repeat(5)}</div>
             </div>
@@ -173,8 +174,8 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600">
-                "Best investment I've made! Eco-friendly, stylish, and saves me
-                so much time getting around the city."
+                &quot;Best investment I&apos;ve made! Eco-friendly, stylish, and
+                saves me so much time getting around the city.&quot;
               </p>
               <div className="flex text-yellow-400 mt-3">{"★".repeat(5)}</div>
             </div>

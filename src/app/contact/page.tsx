@@ -1,7 +1,7 @@
-"use client"
-import { MapPin, Phone, Mail, Clock } from "lucide-react"
-import { motion } from "framer-motion"
-import ContactForm from "@/components/contact-form"
+"use client";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { motion } from "framer-motion";
+import ContactForm from "../components/contact-form";
 
 export default function ContactPage() {
   return (
@@ -9,9 +9,11 @@ export default function ContactPage() {
       <section className="w-full py-12 md:py-24 bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">Contact Us</h1>
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">
+              Contact Us
+            </h1>
             <p className="max-w-[700px] text-white/90 md:text-xl/relaxed">
-              Have questions or feedback? We'd love to hear from you.
+              Have questions or feedback? We&apos;d love to hear from you.
             </p>
           </div>
         </div>
@@ -27,9 +29,12 @@ export default function ContactPage() {
               className="space-y-6"
             >
               <div>
-                <h2 className="text-3xl font-bold tracking-tighter mb-4">Get in Touch</h2>
+                <h2 className="text-3xl font-bold tracking-tighter mb-4">
+                  Get in Touch
+                </h2>
                 <p className="text-gray-500 md:text-lg">
-                  Fill out the form and our team will get back to you within 24 hours.
+                  Fill out the form and our team will get back to you within 24
+                  hours.
                 </p>
               </div>
 
@@ -42,13 +47,17 @@ export default function ContactPage() {
               className="space-y-6 lg:pl-10"
             >
               <div>
-                <h3 className="text-2xl font-bold tracking-tighter mb-4">Contact Information</h3>
+                <h3 className="text-2xl font-bold tracking-tighter mb-4">
+                  Contact Information
+                </h3>
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <MapPin className="h-5 w-5 text-purple-600 mr-3 mt-1" />
                     <div>
                       <p className="font-medium">Visit Us</p>
-                      <p className="text-gray-500">123 Electric Avenue, San Francisco, CA 94107</p>
+                      <p className="text-gray-500">
+                        123 Electric Avenue, San Francisco, CA 94107
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -69,7 +78,9 @@ export default function ContactPage() {
                     <Clock className="h-5 w-5 text-purple-600 mr-3 mt-1" />
                     <div>
                       <p className="font-medium">Business Hours</p>
-                      <p className="text-gray-500">Monday - Friday: 9am - 6pm</p>
+                      <p className="text-gray-500">
+                        Monday - Friday: 9am - 6pm
+                      </p>
                       <p className="text-gray-500">Saturday: 10am - 4pm</p>
                     </div>
                   </div>
@@ -77,7 +88,9 @@ export default function ContactPage() {
               </div>
 
               <div className="pt-6">
-                <h3 className="text-2xl font-bold tracking-tighter mb-4">Follow Us</h3>
+                <h3 className="text-2xl font-bold tracking-tighter mb-4">
+                  Follow Us
+                </h3>
                 <div className="flex space-x-4">
                   <a
                     href="#"
@@ -114,7 +127,14 @@ export default function ContactPage() {
                       strokeLinejoin="round"
                       className="text-purple-600"
                     >
-                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                      <rect
+                        x="2"
+                        y="2"
+                        width="20"
+                        height="20"
+                        rx="5"
+                        ry="5"
+                      ></rect>
                       <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                       <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                     </svg>
@@ -183,41 +203,55 @@ export default function ContactPage() {
       <section className="w-full py-12 md:py-24 bg-gray-50">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <h2 className="text-3xl font-bold tracking-tighter">Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-bold tracking-tighter">
+              Frequently Asked Questions
+            </h2>
             <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed">
               Find answers to common questions about Electric Scotty.
             </p>
           </div>
           <div className="mx-auto grid max-w-5xl gap-6 mt-12">
             <div className="rounded-lg border bg-card p-6">
-              <h3 className="text-lg font-bold mb-2">What is the warranty period for Electric Scotty scooters?</h3>
+              <h3 className="text-lg font-bold mb-2">
+                What is the warranty period for Electric Scotty scooters?
+              </h3>
               <p className="text-gray-500">
-                All Electric Scotty scooters come with a standard 2-year warranty on the frame and a 1-year warranty on
-                electrical components.
+                All Electric Scotty scooters come with a standard 2-year
+                warranty on the frame and a 1-year warranty on electrical
+                components.
               </p>
             </div>
             <div className="rounded-lg border bg-card p-6">
-              <h3 className="text-lg font-bold mb-2">How long does it take to fully charge an Electric Scotty?</h3>
+              <h3 className="text-lg font-bold mb-2">
+                How long does it take to fully charge an Electric Scotty?
+              </h3>
               <p className="text-gray-500">
-                Charging time varies by model, but typically ranges from 3-6 hours for a full charge.
+                Charging time varies by model, but typically ranges from 3-6
+                hours for a full charge.
               </p>
             </div>
             <div className="rounded-lg border bg-card p-6">
-              <h3 className="text-lg font-bold mb-2">Do you offer international shipping?</h3>
+              <h3 className="text-lg font-bold mb-2">
+                Do you offer international shipping?
+              </h3>
               <p className="text-gray-500">
-                Yes, we ship to over 30 countries worldwide. Shipping costs and delivery times vary by location.
+                Yes, we ship to over 30 countries worldwide. Shipping costs and
+                delivery times vary by location.
               </p>
             </div>
             <div className="rounded-lg border bg-card p-6">
-              <h3 className="text-lg font-bold mb-2">Are replacement parts available?</h3>
+              <h3 className="text-lg font-bold mb-2">
+                Are replacement parts available?
+              </h3>
               <p className="text-gray-500">
-                Yes, we offer a full range of replacement parts for all our models. You can order them directly from our
-                website or contact our customer service team.
+                Yes, we offer a full range of replacement parts for all our
+                models. You can order them directly from our website or contact
+                our customer service team.
               </p>
             </div>
           </div>
         </div>
       </section>
     </div>
-  )
+  );
 }

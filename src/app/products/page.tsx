@@ -1,7 +1,7 @@
 "use client";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import ProductCard from "@/components/product-card";
-import ProductFilter from "@/components/product-filter";
+import ProductCard from "../components/product-card";
+import ProductFilter from "../components/footer";
 import { motion } from "framer-motion";
 
 export default function ProductsPage() {

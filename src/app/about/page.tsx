@@ -97,7 +97,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-bold mb-2">Sustainability</h3>
               <p className="text-gray-500">
-                We're committed to reducing carbon emissions and creating products that are environmentally responsible.
+                We&apos;re committed to reducing carbon emissions and creating products that are environmentally responsible.
               </p>
             </motion.div>
             <motion.div
@@ -125,7 +125,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-bold mb-2">Innovation</h3>
               <p className="text-gray-500">
-                We continuously push the boundaries of what's possible in electric mobility technology.
+                We continuously push the boundaries of what&apos;s possible in electric mobility technology.
               </p>
             </motion.div>
             <motion.div
@@ -234,7 +234,7 @@ export default function AboutPage() {
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter">Join Our Mission</h2>
               <p className="max-w-[600px] text-white/90 md:text-xl">
-                We're always looking for talented individuals who are passionate about sustainable transportation and
+                We&apos;re always looking for talented individuals who are passionate about sustainable transportation and
                 innovation.
               </p>
             </div>

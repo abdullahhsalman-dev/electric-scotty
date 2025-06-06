@@ -1,30 +1,31 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, Zap } from "lucide-react"
-import { motion } from "framer-motion"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Menu, Zap } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Header() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
-        setIsScrolled(true)
+        setIsScrolled(true);
       } else {
-        setIsScrolled(false)
+        setIsScrolled(false);
       }
-    }
+    };
 
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <header
@@ -50,16 +51,28 @@ export default function Header() {
           <span className="text-xl font-bold">Electric Scotty</span>
         </Link>
         <nav className="hidden md:flex gap-6">
-          <Link href="/" className="text-sm font-medium transition-colors hover:text-purple-600">
+          <Link
+            href="/"
+            className="text-sm font-medium transition-colors hover:text-purple-600"
+          >
             Home
           </Link>
-          <Link href="/products" className="text-sm font-medium transition-colors hover:text-purple-600">
+          <Link
+            href="/products"
+            className="text-sm font-medium transition-colors hover:text-purple-600"
+          >
             Products
           </Link>
-          <Link href="/about" className="text-sm font-medium transition-colors hover:text-purple-600">
+          <Link
+            href="/about"
+            className="text-sm font-medium transition-colors hover:text-purple-600"
+          >
             About
           </Link>
-          <Link href="/contact" className="text-sm font-medium transition-colors hover:text-purple-600">
+          <Link
+            href="/contact"
+            className="text-sm font-medium transition-colors hover:text-purple-600"
+          >
             Contact
           </Link>
         </nav>
@@ -110,12 +123,18 @@ export default function Header() {
               </Link>
               <div className="flex flex-col gap-2 mt-4">
                 <Button asChild variant="outline" size="sm">
-                  <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+                  <Link
+                    href="/contact"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
                     Support
                   </Link>
                 </Button>
                 <Button asChild size="sm">
-                  <Link href="/products" onClick={() => setIsMobileMenuOpen(false)}>
+                  <Link
+                    href="/products"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
                     Shop Now
                   </Link>
                 </Button>
@@ -125,5 +144,5 @@ export default function Header() {
         </Sheet>
       </div>
     </header>
-  )
+  );
 }
