@@ -1,103 +1,220 @@
-import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight, ChevronRight, Zap } from "lucide-react";
+import { Button } from "./components/ui/button";
+import HeroAnimation from "/components/hero-animation";
+import ProductCard from "./components/product-card";
+import FeatureSection from "./components/feature-section";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex flex-col min-h-screen">
+      {/* Hero Section */}
+      <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-br from-violet-500 via-purple-500 to-fuchsia-500 overflow-hidden">
+        <div className="container px-4 md:px-6 relative z-10">
+          <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+            <div className="space-y-4">
+              <div className="inline-block rounded-lg bg-white/10 px-3 py-1 text-sm backdrop-blur-sm">
+                <span className="text-white font-medium flex items-center gap-1">
+                  <Zap className="h-4 w-4" /> New Models Available
+                </span>
+              </div>
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white">
+                Ride the Future with Electric Scotty
+              </h1>
+              <p className="max-w-[600px] text-white/90 md:text-xl">
+                Experience the thrill of eco-friendly urban mobility with our
+                premium electric scooters. Designed for style, built for
+                performance.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-white text-purple-600 hover:bg-white/90"
+                >
+                  <Link href="/products">
+                    Explore Models <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="lg"
+                  className="border-white text-white hover:bg-white/10"
+                >
+                  <Link href="/about">Learn More</Link>
+                </Button>
+              </div>
+            </div>
+            <div className="relative">
+              <HeroAnimation />
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] opacity-10 bg-repeat"></div>
+      </section>
+
+      {/* Featured Products */}
+      <section className="w-full py-12 md:py-24 bg-white">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="space-y-2">
+              <div className="inline-block rounded-lg bg-purple-100 px-3 py-1 text-sm text-purple-600">
+                Featured Models
+              </div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                Meet Our Electric Fleet
+              </h2>
+              <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed">
+                Discover our range of electric scooters designed for every
+                lifestyle and need.
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            <ProductCard
+              name="Scotty Lite"
+              price={499}
+              image="/placeholder.svg?height=400&width=400"
+              color="Blue"
+              range="25 miles"
+              speed="15 mph"
+            />
+            <ProductCard
+              name="Scotty Pro"
+              price={799}
+              image="/placeholder.svg?height=400&width=400"
+              color="Purple"
+              range="40 miles"
+              speed="22 mph"
+            />
+            <ProductCard
+              name="Scotty Ultra"
+              price={1299}
+              image="/placeholder.svg?height=400&width=400"
+              color="Green"
+              range="60 miles"
+              speed="28 mph"
+            />
+          </div>
+          <div className="flex justify-center mt-10">
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="border-purple-500 text-purple-600 hover:bg-purple-50"
+            >
+              <Link href="/products">
+                View All Models <ChevronRight className="ml-1 h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <FeatureSection />
+
+      {/* Testimonials */}
+      <section className="w-full py-12 md:py-24 bg-gray-50">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+                What Our Riders Say
+              </h2>
+              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed">
+                Join thousands of satisfied Electric Scotty riders around the
+                world.
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="h-12 w-12 rounded-full bg-purple-100 flex items-center justify-center mr-3">
+                  <span className="text-purple-600 font-bold">A</span>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Alex Chen</h4>
+                  <p className="text-sm text-gray-500">San Francisco</p>
+                </div>
+              </div>
+              <p className="text-gray-600">
+                "My Electric Scotty has completely transformed my daily commute.
+                It's fast, reliable, and so much fun to ride!"
+              </p>
+              <div className="flex text-yellow-400 mt-3">{"★".repeat(5)}</div>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="h-12 w-12 rounded-full bg-purple-100 flex items-center justify-center mr-3">
+                  <span className="text-purple-600 font-bold">M</span>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Maria Rodriguez</h4>
+                  <p className="text-sm text-gray-500">Los Angeles</p>
+                </div>
+              </div>
+              <p className="text-gray-600">
+                "Love the design and performance! Perfect for city riding and
+                the battery life is amazing."
+              </p>
+              <div className="flex text-yellow-400 mt-3">{"★".repeat(5)}</div>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="h-12 w-12 rounded-full bg-purple-100 flex items-center justify-center mr-3">
+                  <span className="text-purple-600 font-bold">J</span>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Jordan Smith</h4>
+                  <p className="text-sm text-gray-500">New York</p>
+                </div>
+              </div>
+              <p className="text-gray-600">
+                "Best investment I've made! Eco-friendly, stylish, and saves me
+                so much time getting around the city."
+              </p>
+              <div className="flex text-yellow-400 mt-3">{"★".repeat(5)}</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="w-full py-12 md:py-24 bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white">
+        <div className="container px-4 md:px-6">
+          <div className="grid gap-6 lg:grid-cols-2 items-center">
+            <div className="space-y-4">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+                Ready to Join the Electric Revolution?
+              </h2>
+              <p className="max-w-[600px] text-white/90 md:text-xl">
+                Get exclusive offers, eco-friendly tips, and be the first to
+                know about new models.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-end">
+              <Button
+                asChild
+                size="lg"
+                className="bg-white text-purple-600 hover:bg-white/90"
+              >
+                <Link href="/products">Shop Now</Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="border-white text-white hover:bg-white/10"
+              >
+                <Link href="/contact">Contact Us</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
