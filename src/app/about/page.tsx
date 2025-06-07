@@ -56,7 +56,7 @@ export default function AboutPage() {
               className="relative h-[400px] overflow-hidden rounded-xl"
             >
               <Image
-                src="/placeholder.svg?height=800&width=1200"
+                src="/bike.avif?height=800&width=1200"
                 alt="Electric Scotty team"
                 fill
                 className="object-cover"
@@ -192,7 +192,7 @@ export default function AboutPage() {
             >
               <div className="relative h-40 w-40 rounded-full overflow-hidden mb-4">
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
+                  src="/bike.avif?height=300&width=300"
                   alt="Alex Scotty"
                   fill
                   className="object-cover"
@@ -210,7 +210,7 @@ export default function AboutPage() {
             >
               <div className="relative h-40 w-40 rounded-full overflow-hidden mb-4">
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
+                  src="/bike.avif?height=300&width=300"
                   alt="Sarah Chen"
                   fill
                   className="object-cover"
@@ -228,7 +228,7 @@ export default function AboutPage() {
             >
               <div className="relative h-40 w-40 rounded-full overflow-hidden mb-4">
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
+                  src="/bike.avif?height=300&width=300"
                   alt="Marcus Johnson"
                   fill
                   className="object-cover"
@@ -246,7 +246,7 @@ export default function AboutPage() {
             >
               <div className="relative h-40 w-40 rounded-full overflow-hidden mb-4">
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
+                  src="/bike.avif?height=300&width=300"
                   alt="Leila Patel"
                   fill
                   className="object-cover"

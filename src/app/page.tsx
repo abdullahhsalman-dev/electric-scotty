@@ -75,7 +75,7 @@ export default function Home() {
             <ProductCard
               name="Scotty Lite"
               price={499}
-              image="/placeholder.svg?height=400&width=400"
+              image="/bike.avif?height=400&width=400"
               color="Blue"
               range="25 miles"
               speed="15 mph"
@@ -83,7 +83,7 @@ export default function Home() {
             <ProductCard
               name="Scotty Pro"
               price={799}
-              image="/placeholder.svg?height=400&width=400"
+              image="/bike.avif?height=400&width=400"
               color="Purple"
               range="40 miles"
               speed="22 mph"
@@ -91,7 +91,7 @@ export default function Home() {
             <ProductCard
               name="Scotty Ultra"
               price={1299}
-              image="/placeholder.svg?height=400&width=400"
+              image="/bike.avif?height=400&width=400"
               color="Green"
               range="60 miles"
               speed="28 mph"
@@ -208,7 +208,7 @@ export default function Home() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-white text-white hover:bg-white/10"
+                className="border-white bg-bg-white/10 text-white hover:bg-white/20"
               >
                 <Link href="/contact">Contact Us</Link>
               </Button>

@@ -12,7 +12,7 @@ export default function HeroAnimation() {
         className="absolute inset-0"
       >
         <Image
-          src="/placeholder.svg?height=1000&width=1000"
+          src="/bike.avif?height=1000&width=1000"
           alt="Electric Scotty Scooter"
           fill
           className="object-contain"

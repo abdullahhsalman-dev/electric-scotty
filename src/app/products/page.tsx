@@ -61,7 +61,7 @@ export default function ProductsPage() {
                       <ProductCard
                         name="Scotty Lite"
                         price={499}
-                        image="/placeholder.svg?height=400&width=400"
+                        image="/bike.avif?height=400&width=400"
                         color="Blue"
                         range="25 miles"
                         speed="15 mph"
@@ -71,7 +71,7 @@ export default function ProductsPage() {
                       <ProductCard
                         name="Scotty Pro"
                         price={799}
-                        image="/placeholder.svg?height=400&width=400"
+                        image="/bike.avif?height=400&width=400"
                         color="Purple"
                         range="40 miles"
                         speed="22 mph"
@@ -81,7 +81,7 @@ export default function ProductsPage() {
                       <ProductCard
                         name="Scotty Ultra"
                         price={1299}
-                        image="/placeholder.svg?height=400&width=400"
+                        image="/bike.avif?height=400&width=400"
                         color="Green"
                         range="60 miles"
                         speed="28 mph"
@@ -91,7 +91,7 @@ export default function ProductsPage() {
                       <ProductCard
                         name="Scotty Fold"
                         price={699}
-                        image="/placeholder.svg?height=400&width=400"
+                        image="/bike.avif?height=400&width=400"
                         color="Orange"
                         range="30 miles"
                         speed="18 mph"
@@ -101,7 +101,7 @@ export default function ProductsPage() {
                       <ProductCard
                         name="Scotty Mini"
                         price={399}
-                        image="/placeholder.svg?height=400&width=400"
+                        image="/bike.avif?height=400&width=400"
                         color="Teal"
                         range="20 miles"
                         speed="12 mph"
@@ -111,7 +111,7 @@ export default function ProductsPage() {
                       <ProductCard
                         name="Scotty Max"
                         price={1499}
-                        image="/placeholder.svg?height=400&width=400"
+                        image="/bike.avif?height=400&width=400"
                         color="Red"
                         range="70 miles"
                         speed="30 mph"
@@ -124,7 +124,7 @@ export default function ProductsPage() {
                     <ProductCard
                       name="Scotty Lite"
                       price={499}
-                      image="/placeholder.svg?height=400&width=400"
+                      image="/bike.avif?height=400&width=400"
                       color="Blue"
                       range="25 miles"
                       speed="15 mph"
@@ -132,7 +132,7 @@ export default function ProductsPage() {
                     <ProductCard
                       name="Scotty Fold"
                       price={699}
-                      image="/placeholder.svg?height=400&width=400"
+                      image="/bike.avif?height=400&width=400"
                       color="Orange"
                       range="30 miles"
                       speed="18 mph"
@@ -140,7 +140,7 @@ export default function ProductsPage() {
                     <ProductCard
                       name="Scotty Mini"
                       price={399}
-                      image="/placeholder.svg?height=400&width=400"
+                      image="/bike.avif?height=400&width=400"
                       color="Teal"
                       range="20 miles"
                       speed="12 mph"
@@ -152,7 +152,7 @@ export default function ProductsPage() {
                     <ProductCard
                       name="Scotty Pro"
                       price={799}
-                      image="/placeholder.svg?height=400&width=400"
+                      image="/bike.avif?height=400&width=400"
                       color="Purple"
                       range="40 miles"
                       speed="22 mph"
@@ -160,7 +160,7 @@ export default function ProductsPage() {
                     <ProductCard
                       name="Scotty Ultra"
                       price={1299}
-                      image="/placeholder.svg?height=400&width=400"
+                      image="/bike.avif?height=400&width=400"
                       color="Green"
                       range="60 miles"
                       speed="28 mph"
@@ -168,7 +168,7 @@ export default function ProductsPage() {
                     <ProductCard
                       name="Scotty Max"
                       price={1499}
-                      image="/placeholder.svg?height=400&width=400"
+                      image="/bike.avif?height=400&width=400"
                       color="Red"
                       range="70 miles"
                       speed="30 mph"
@@ -180,7 +180,7 @@ export default function ProductsPage() {
                     <ProductCard
                       name="Scotty Ultra"
                       price={1299}
-                      image="/placeholder.svg?height=400&width=400"
+                      image="/bike.avif?height=400&width=400"
                       color="Green"
                       range="60 miles"
                       speed="28 mph"
@@ -188,7 +188,7 @@ export default function ProductsPage() {
                     <ProductCard
                       name="Scotty Max"
                       price={1499}
-                      image="/placeholder.svg?height=400&width=400"
+                      image="/bike.avif?height=400&width=400"
                       color="Red"
                       range="70 miles"
                       speed="30 mph"

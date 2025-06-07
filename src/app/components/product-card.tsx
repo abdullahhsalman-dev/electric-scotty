@@ -34,7 +34,7 @@ export default function ProductCard({
     >
       <div className="relative h-64 bg-gradient-to-br from-gray-50 to-gray-100">
         <Image
-          src={image || "/placeholder.svg"}
+          src={image || "/bike.avif"}
           alt={name}
           fill
           className="object-contain p-4"
