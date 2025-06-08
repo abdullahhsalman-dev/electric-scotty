@@ -11,7 +11,6 @@ export const metadata: Metadata = {
   title: "Electric Scotty | Premium Electric Scooters",
   description:
     "Experience the thrill of eco-friendly urban mobility with Electric Scotty's premium electric scooters.",
-  generator: "v0.dev",
 };
 
 export default function RootLayout({
